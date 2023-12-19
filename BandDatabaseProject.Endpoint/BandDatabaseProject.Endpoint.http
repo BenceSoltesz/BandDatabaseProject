@@ -1,0 +1,6 @@
+@BandDatabaseProject.Endpoint_HostAddress = http://localhost:5037
+
+GET {{BandDatabaseProject.Endpoint_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
