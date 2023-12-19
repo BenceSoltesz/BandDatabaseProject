@@ -13,7 +13,7 @@ namespace BandDatabaseProject.Client.Models
     {
 
         public Concert(){}
-        public Concert(int concertId,int bandId,string concertName, int ticketPrice, int soldTickets,int VenueId)
+        public Concert(int concertId,int bandId,string concertName, int ticketPrice, int soldTickets,int VenueId, string concertDate)
         {
             this.ConcertId = concertId;
             this.BandId = bandId;
@@ -21,6 +21,7 @@ namespace BandDatabaseProject.Client.Models
             this.TicketPrice = ticketPrice;
             this.SoldTickets = soldTickets;
             this.VenueId = VenueId;
+            this.ConcertDate = DateTime.Parse(concertDate.Replace("-", "."));
             Revenue = SoldTickets * TicketPrice;
         }
         public Concert(string input)
@@ -30,9 +31,9 @@ namespace BandDatabaseProject.Client.Models
             BandId = int.Parse(split[1]);
             ConcertName = split[2];
             TicketPrice = int.Parse(split[3]);
-            VenueId = int.Parse(split[5]);
-            ConcertDate = DateTime.Parse(split[6].Replace("-", "."));
-            SoldTickets = int.Parse(split[7]);
+            VenueId = int.Parse(split[4]);
+            ConcertDate = DateTime.Parse(split[5].Replace("-", "."));
+            SoldTickets = int.Parse(split[6]);
             Revenue = SoldTickets * TicketPrice;
         }
 

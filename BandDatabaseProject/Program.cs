@@ -106,7 +106,7 @@ namespace BandDatabaseProject.Client
                 rest.Post(new Venue()
                 {
                     VenueName = name,
-                    Room = room
+                    BackStage = room
                 }, "venue");
 
             }
@@ -166,8 +166,8 @@ namespace BandDatabaseProject.Client
                 foreach (var item in venues)
                 {
                     Console.WriteLine(item.VenueId + " : " +
-                        item.VenueName + " : " +
-                         item.Room);
+                        item.VenueName + " : backstage: " +
+                         item.BackStage);
                 }
             }
             Console.ReadLine();
@@ -223,8 +223,8 @@ namespace BandDatabaseProject.Client
                 int id = int.Parse(Console.ReadLine());
                 Venue item = rest.Get<Venue>(id, "venue");
                 Console.WriteLine(item.VenueId + " : " +
-                        item.VenueName + " : " +
-                         item.Room);
+                        item.VenueName + " : backstage: " +
+                         item.BackStage);
             }
             Console.ReadLine();
         }
@@ -303,11 +303,19 @@ namespace BandDatabaseProject.Client
 
                 Console.Write($"New name [old: {old.VenueName}]: ");
                 string name = Console.ReadLine();
-                Console.Write($"New Room Name [old: {old.Room}]: ");
+                Console.Write($"Is there a Backstage?(Y/N) [old: {old.BackStage}]: ");
                 string room = Console.ReadLine();
 
                 old.VenueName = name;
-                old.Room = room;
+                if (room.ToUpper().Equals("Y"))
+                {
+                    old.BackStage = true;
+                }
+                else
+                {
+                    old.BackStage = false;
+                }
+                
                 rest.Put(old, "venue");
             }
 

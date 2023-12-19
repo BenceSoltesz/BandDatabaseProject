@@ -7,13 +7,14 @@ namespace BandDatabaseProject.Client.Models
 {
     public class Band
     {
-        public Band(int bandId, string bandName,string genre, string origin, int managerId)
+        public Band(int bandId, string bandName,string genre, string origin, int managerId, string established)
         {
             this.BandId = bandId;
             this.BandName = bandName;
             this.Genre = genre;
             this.Origin = origin;
             this.ManagerId = managerId;
+            this.Established = DateTime.Parse(established.Replace('-', '.'));
         }
         public Band()
         {
