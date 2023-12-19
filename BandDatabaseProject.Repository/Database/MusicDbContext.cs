@@ -80,29 +80,36 @@ namespace BandDatabaseProject.Repository
 
             modelBuilder.Entity<Concert>().HasData(new Concert[] {
 
-                new Concert("1#1#FonixCsarnokJubileum#10#1#1995-01-01#2000"), //20000 | ID, BandId,ConcertName, TicketPrice, (Datagenerator goes vrumvrum(I Dont use this)),VenueID,ConcertDate,SoldTickets 
-                new Concert("2#1#FonixCsarnok#10#1#1995-02-01#2000"), //20000
-                new Concert("3#1#FonixCsarnokNagyJubileum#10#1#2000-02-01#1000"),//10000
+                new Concert("1#1#FonixCsarnokJubileum#10#1#1995-01-01#2000"),
+                new Concert("2#1#FonixCsarnok#10#1#1995-02-01#2000"),
+                new Concert("3#1#FonixCsarnokNagyJubileum#10#1#2000-02-01#1000"),
 
-                new Concert(4,2,"Alvin 2021 Tavasz Békéscsaba",2500,600,3,"2021-04-24"),  //id 3 Békéscsaba
-                new Concert(5,2,"Alvin 2021 Tavasz Budapest",2500,1500,2,"2021-05-13"),                 //id 2 Budapest
+                new Concert(4,2,"Alvin 2021 Tavasz Békéscsaba",2500,600,3,"2021-04-24"),
+                new Concert(5,2,"Alvin 2021 Tavasz Budapest",2500,1500,2,"2021-05-13"),
 
-                //To do
+                new Concert(6,6,"Queen 1986 Magic Tour Budapest",1000,70000,6,"1986-07-27"),
 
-            }) ;
+            });
 
 
             modelBuilder.Entity<LongPlaying>().HasData(new LongPlaying[] {
-                    // To do
+                new LongPlaying(1,1,"A legjobb méreg",1992,57,196347,1200),
+                new LongPlaying(2,1,"Mindenki vár valamit",2006,64,297356,1599),
+                new LongPlaying(3,1,"Az ember tervez",1995,74,345982,1200),
+                new LongPlaying(4,2,"Emberek és állatok",1999,51,174562,999),
+                new LongPlaying(5,2,"Punkpopsuperstar",2002,63,3961467,1100),
+                new LongPlaying()
+
         });
 
             modelBuilder.Entity<Venue>().HasData(new Venue[] {
-            
+
                 new Venue(1,"Fonixcsarnok",true),
                 new Venue(2,"Budapest Analóg Music Hall",true),
                 new Venue(3,"Békéscsaba Művelődési központ",false),
                 new Venue(4,"Debrecen Roncs Bár",true),
                 new Venue(5,"Miskolc Gösser Pub", false),
+                new Venue(6,"Budapest Puskás Ferenc Stadion",true) 
                 //To do
 
 

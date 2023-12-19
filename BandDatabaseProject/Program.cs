@@ -16,6 +16,7 @@ namespace BandDatabaseProject.Client
 {
     public class Program
     {
+        //TO DO Refactor method to use Reflecion 
         static RestService rest;
         static void Create(string entity)
         {

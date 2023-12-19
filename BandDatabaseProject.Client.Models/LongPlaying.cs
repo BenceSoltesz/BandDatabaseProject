@@ -15,9 +15,10 @@ namespace BandDatabaseProject.Client.Models
     public class LongPlaying
     {
         public LongPlaying() { }
-        public LongPlaying(int longPlayingId, string longPlayingName, int releaseYear ,int lengthInMinute, int soldCopies, double price )
+        public LongPlaying(int longPlayingId,int bandId, string longPlayingName, int releaseYear ,int lengthInMinute, int soldCopies, double price )
         {
             this.LongPlayingId = longPlayingId;
+            this.BandId = bandId;
             this.LongPlayingName = longPlayingName;
             this.ReleaseYear = releaseYear;
             this.LengthInMinute = lengthInMinute;
