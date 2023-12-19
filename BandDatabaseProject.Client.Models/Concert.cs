@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BandDatabaseProject.Client.Models
 {
-    internal class Concert
+    public class Concert
     {
 
         public Concert()

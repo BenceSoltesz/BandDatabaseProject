@@ -9,27 +9,31 @@ using System.Threading.Tasks;
 
 namespace BandDatabaseProject.Client.Models
 {
-    public class Manager
+    public class Venue
     {
-
-
-        public Manager()
+        public Venue()
         {
-            ManagedBands = new HashSet<Band>();
+            Concerts = new HashSet<Concert>();
         }
-        public Manager(string input)
+        public Venue(string input)
         {
             string[] split = input.Split('#');
-            ManagerId = int.Parse(split[0]);
-            ManagerName = split[1];
+            VenueId = int.Parse(split[0]);
+            VenueName = split[1];
+            Room = split[2];
+            Concerts = new HashSet<Concert>();
         }
+
+
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ManagerId { get; set; }
-
-        public string ManagerName { get; set; }
+        public int VenueId { get; set; }
+        [Required]
+        public string VenueName { get; set; }
+        public string Room { get; set; }
         [JsonIgnore]
-        public virtual ICollection<Band> ManagedBands { get; set; }
+        public virtual ICollection<Concert> Concerts { get; set; }
+
     }
 }
