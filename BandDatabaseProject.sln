@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject.Client", "BandDatabaseProject\BandDatabaseProject.Client.csproj", "{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Client", "BandDatabaseProject\BandDatabaseProject.Client.csproj", "{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{26A1EBF8-CA39-47DF-AED6-5D56A9A69040}"
 EndProject
@@ -11,13 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{49D5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9C8D6248-5F9D-4E49-9E37-CB51F6D9A61D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject.Models", "BandDatabaseProject.Client.Models\BandDatabaseProject.Models.csproj", "{C574BEFF-BF83-4DFD-8617-CD5408323800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Models", "BandDatabaseProject.Client.Models\BandDatabaseProject.Models.csproj", "{C574BEFF-BF83-4DFD-8617-CD5408323800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject.Repository", "BandDatabaseProject.Repository\BandDatabaseProject.Repository.csproj", "{36631ADB-2E99-4F9C-8DB8-B36F27A426AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Repository", "BandDatabaseProject.Repository\BandDatabaseProject.Repository.csproj", "{36631ADB-2E99-4F9C-8DB8-B36F27A426AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject.Logic", "BandDatabaseProject.Logic\BandDatabaseProject.Logic.csproj", "{19F8FDF3-1BCD-4A3F-A654-ABF6045BAACE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Logic", "BandDatabaseProject.Logic\BandDatabaseProject.Logic.csproj", "{19F8FDF3-1BCD-4A3F-A654-ABF6045BAACE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject.Endpoint", "BandDatabaseProject.Endpoint\BandDatabaseProject.Endpoint.csproj", "{D2C58B20-786A-47C0-B704-6E48B3C52F11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Endpoint", "BandDatabaseProject.Endpoint\BandDatabaseProject.Endpoint.csproj", "{D2C58B20-786A-47C0-B704-6E48B3C52F11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject.Test", "BandDatabaseProject.Test\BandDatabaseProject.Test.csproj", "{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D2C58B20-786A-47C0-B704-6E48B3C52F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2C58B20-786A-47C0-B704-6E48B3C52F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2C58B20-786A-47C0-B704-6E48B3C52F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{36631ADB-2E99-4F9C-8DB8-B36F27A426AD} = {49D5D268-984B-4141-ABD8-992221A9F8DD}
 		{19F8FDF3-1BCD-4A3F-A654-ABF6045BAACE} = {49D5D268-984B-4141-ABD8-992221A9F8DD}
 		{D2C58B20-786A-47C0-B704-6E48B3C52F11} = {49D5D268-984B-4141-ABD8-992221A9F8DD}
+		{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7} = {49D5D268-984B-4141-ABD8-992221A9F8DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E9DF155-2491-4180-B7BE-28BE328DBEAA}
