@@ -7,7 +7,14 @@ namespace BandDatabaseProject.Client.Models
 {
     public class Band
     {
-
+        public Band(int bandId, string bandName,string genre, string origin, int managerId)
+        {
+            this.BandId = bandId;
+            this.BandName = bandName;
+            this.Genre = genre;
+            this.Origin = origin;
+            this.ManagerId = managerId;
+        }
         public Band()
         {
             Concerts = new HashSet<Concert>();
@@ -22,6 +29,8 @@ namespace BandDatabaseProject.Client.Models
             Origin = split[3];
             ManagerId = int.Parse(split[4]);
             Established = DateTime.Parse(split[5].Replace('-', '.'));
+            Concerts = new HashSet<Concert>();
+            LongPlayings = new HashSet<LongPlaying>();
 
         }
         [Key]

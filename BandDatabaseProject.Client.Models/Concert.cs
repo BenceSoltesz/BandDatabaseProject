@@ -12,9 +12,16 @@ namespace BandDatabaseProject.Client.Models
     public class Concert
     {
 
-        public Concert()
+        public Concert(){}
+        public Concert(int concertId,int bandId,string concertName, int ticketPrice, int soldTickets,int VenueId)
         {
-
+            this.ConcertId = concertId;
+            this.BandId = bandId;
+            this.ConcertName = concertName;
+            this.TicketPrice = ticketPrice;
+            this.SoldTickets = soldTickets;
+            this.VenueId = VenueId;
+            Revenue = SoldTickets * TicketPrice;
         }
         public Concert(string input)
         {

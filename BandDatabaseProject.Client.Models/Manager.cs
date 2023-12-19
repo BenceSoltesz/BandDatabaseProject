@@ -17,6 +17,11 @@ namespace BandDatabaseProject.Client.Models
         {
             ManagedBands = new HashSet<Band>();
         }
+        public Manager(int managerId, string managerName)
+        {
+            this.ManagerId = managerId;
+            this.ManagerName = managerName;
+        }
         public Manager(string input)
         {
             string[] split = input.Split('#');

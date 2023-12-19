@@ -15,6 +15,12 @@ namespace BandDatabaseProject.Client.Models
         {
             Concerts = new HashSet<Concert>();
         }
+        public Venue(int venueId, string venueName, string room)
+        {
+            this.VenueId = venueId;
+            this.VenueName = venueName;
+            this.Room = room;
+        }
         public Venue(string input)
         {
             string[] split = input.Split('#');
