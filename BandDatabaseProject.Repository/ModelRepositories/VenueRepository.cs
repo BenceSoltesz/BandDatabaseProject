@@ -26,7 +26,7 @@ namespace BandDatabaseProject.Repository.ModelRepositories
         {
             var old = Read(item.VenueId);
             old.VenueName = item.VenueName;
-            old.Room = item.Room;
+            old.BackStage = item.BackStage;
             ctx.SaveChanges();
         }
     }

@@ -100,13 +100,19 @@ namespace BandDatabaseProject.Client
             {
                 Console.Write("Enter Venue Name: ");
                 string name = Console.ReadLine();
-                Console.Write("Enter Venue RoomName: ");
-                string room = Console.ReadLine();
+                Console.Write("Is there a Backstage? (Y/N): ");
+                string isThereBackStage = Console.ReadLine();
+                bool backStage;
+                if (isThereBackStage.ToUpper().Equals("Y"))
+                    backStage = true;
+                else
+                    backStage = false;
 
                 rest.Post(new Venue()
                 {
                     VenueName = name,
-                    BackStage = room
+                    BackStage = backStage
+                    
                 }, "venue");
 
             }

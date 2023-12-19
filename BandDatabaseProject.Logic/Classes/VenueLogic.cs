@@ -17,11 +17,7 @@ namespace BandDatabaseProject.Logic.Classes
             this.repo = repo;
         }
         public void Create(Venue item)
-        {
-            if (item.Room == item.VenueName)
-            {
-                throw new ArgumentException("RoomName has to be different than VenueName");
-            }
+        {           
             this.repo.Create(item);
         }
 
