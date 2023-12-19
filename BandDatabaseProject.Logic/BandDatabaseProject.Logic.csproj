@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BandDatabaseProject.Models\BandDatabaseProject.Models.csproj" />
     <ProjectReference Include="..\BandDatabaseProject.Repository\BandDatabaseProject.Repository.csproj" />
   </ItemGroup>
 

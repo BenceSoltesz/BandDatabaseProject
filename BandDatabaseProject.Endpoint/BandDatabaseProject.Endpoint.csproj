@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BandDatabaseProject.Logic\BandDatabaseProject.Logic.csproj" />
+    <ProjectReference Include="..\BandDatabaseProject.Models\BandDatabaseProject.Models.csproj" />
     <ProjectReference Include="..\BandDatabaseProject.Repository\BandDatabaseProject.Repository.csproj" />
   </ItemGroup>
 

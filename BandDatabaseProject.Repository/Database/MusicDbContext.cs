@@ -1,4 +1,5 @@
-﻿using BandDatabaseProject.Client.Models;
+﻿
+using BandDatabaseProject.Client.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 
