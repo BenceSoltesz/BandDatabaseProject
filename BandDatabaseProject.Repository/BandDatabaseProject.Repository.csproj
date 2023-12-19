@@ -16,8 +16,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BandDatabaseProject.Client.Models\BandDatabaseProject.Models.csproj" />
-  </ItemGroup>
-
 </Project>

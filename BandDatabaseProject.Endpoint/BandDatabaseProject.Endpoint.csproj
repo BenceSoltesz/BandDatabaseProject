@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BandDatabaseProject.Client.Models\BandDatabaseProject.Models.csproj" />
     <ProjectReference Include="..\BandDatabaseProject.Logic\BandDatabaseProject.Logic.csproj" />
     <ProjectReference Include="..\BandDatabaseProject.Repository\BandDatabaseProject.Repository.csproj" />
   </ItemGroup>

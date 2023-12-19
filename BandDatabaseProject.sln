@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{49D5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9C8D6248-5F9D-4E49-9E37-CB51F6D9A61D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Models", "BandDatabaseProject.Client.Models\BandDatabaseProject.Models.csproj", "{C574BEFF-BF83-4DFD-8617-CD5408323800}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Repository", "BandDatabaseProject.Repository\BandDatabaseProject.Repository.csproj", "{36631ADB-2E99-4F9C-8DB8-B36F27A426AD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Logic", "BandDatabaseProject.Logic\BandDatabaseProject.Logic.csproj", "{19F8FDF3-1BCD-4A3F-A654-ABF6045BAACE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Endpoint", "BandDatabaseProject.Endpoint\BandDatabaseProject.Endpoint.csproj", "{D2C58B20-786A-47C0-B704-6E48B3C52F11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject.Test", "BandDatabaseProject.Test\BandDatabaseProject.Test.csproj", "{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Test", "BandDatabaseProject.Test\BandDatabaseProject.Test.csproj", "{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandDatabaseProject.Models", "BandDatabaseProject.Models\BandDatabaseProject.Models.csproj", "{E42F05EF-1116-4436-B7AA-92F0EF3C640E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,6 @@ Global
 		{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C574BEFF-BF83-4DFD-8617-CD5408323800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C574BEFF-BF83-4DFD-8617-CD5408323800}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C574BEFF-BF83-4DFD-8617-CD5408323800}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C574BEFF-BF83-4DFD-8617-CD5408323800}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36631ADB-2E99-4F9C-8DB8-B36F27A426AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36631ADB-2E99-4F9C-8DB8-B36F27A426AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36631ADB-2E99-4F9C-8DB8-B36F27A426AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,17 +47,21 @@ Global
 		{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E42F05EF-1116-4436-B7AA-92F0EF3C640E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E42F05EF-1116-4436-B7AA-92F0EF3C640E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E42F05EF-1116-4436-B7AA-92F0EF3C640E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E42F05EF-1116-4436-B7AA-92F0EF3C640E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074} = {26A1EBF8-CA39-47DF-AED6-5D56A9A69040}
-		{C574BEFF-BF83-4DFD-8617-CD5408323800} = {9C8D6248-5F9D-4E49-9E37-CB51F6D9A61D}
 		{36631ADB-2E99-4F9C-8DB8-B36F27A426AD} = {49D5D268-984B-4141-ABD8-992221A9F8DD}
 		{19F8FDF3-1BCD-4A3F-A654-ABF6045BAACE} = {49D5D268-984B-4141-ABD8-992221A9F8DD}
 		{D2C58B20-786A-47C0-B704-6E48B3C52F11} = {49D5D268-984B-4141-ABD8-992221A9F8DD}
 		{BBBD9905-F7A1-4218-81E9-3FBCD83BD5B7} = {49D5D268-984B-4141-ABD8-992221A9F8DD}
+		{E42F05EF-1116-4436-B7AA-92F0EF3C640E} = {9C8D6248-5F9D-4E49-9E37-CB51F6D9A61D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E9DF155-2491-4180-B7BE-28BE328DBEAA}
