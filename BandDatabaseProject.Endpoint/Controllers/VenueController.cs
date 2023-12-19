@@ -6,10 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BandDatabaseProject.Endpoint.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class VenueController : ControllerBase
-    {
+
         [Route("[controller]")]
         [ApiController]
         public class VenueController : ControllerBase
@@ -56,3 +53,4 @@ namespace BandDatabaseProject.Endpoint.Controllers
             }
         }
     }
+
