@@ -40,7 +40,7 @@ namespace BandDatabaseProject.Endpoint
 
             services.AddControllers();
             services.AddSwaggerGen(c => {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "P0SPO9_HFT_2023241.Endpoint", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "BandDatabaseProject.Endpoint", Version = "v1" });
             });
         }
 
@@ -51,7 +51,7 @@ namespace BandDatabaseProject.Endpoint
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "P0SPO9_HFT_2023241.Endpoint v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BandDatabaseProject.Endpoint v1"));
 
             }
 
