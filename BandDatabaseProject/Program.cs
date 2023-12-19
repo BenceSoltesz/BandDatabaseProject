@@ -1,9 +1,7 @@
 ﻿using BandDatabaseProject.Client;
+using BandDatabaseProject.Client.Models;
 using ConsoleTools;
-using P0SPO9_HFT_2023241.Logic;
-using P0SPO9_HFT_2023241.Logic.Classes;
-using P0SPO9_HFT_2023241.Models;
-using P0SPO9_HFT_2023241.Repository;
+
 
 using System;
 using System.Collections;
