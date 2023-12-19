@@ -50,7 +50,6 @@ namespace BandDatabaseProject.Client.Models
 
             public override bool Equals(object obj)
             {
-
                 var o = obj as LongPlaying;
 
                 return o.BandId == this.BandId && o.LongPlayingName.Equals(this.LongPlayingName) && o.ReleaseYear == this.ReleaseYear && o.LengthInMinute == this.LengthInMinute;

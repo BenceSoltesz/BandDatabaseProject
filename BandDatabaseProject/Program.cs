@@ -14,7 +14,7 @@ using System.Numerics;
 
 namespace BandDatabaseProject.Client
 {
-    internal class Program
+    public class Program
     {
         static RestService rest;
         static void Create(string entity)
@@ -385,7 +385,7 @@ namespace BandDatabaseProject.Client
         {
 
         }
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
             rest = new RestService("http://localhost:44755/", "band");
