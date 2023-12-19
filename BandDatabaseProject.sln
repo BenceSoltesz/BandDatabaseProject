@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject", "BandDatabaseProject\BandDatabaseProject.csproj", "{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject.Client", "BandDatabaseProject\BandDatabaseProject.Client.csproj", "{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{26A1EBF8-CA39-47DF-AED6-5D56A9A69040}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{49D5D268-984B-4141-ABD8-992221A9F8DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9C8D6248-5F9D-4E49-9E37-CB51F6D9A61D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandDatabaseProject.Client.Models", "BandDatabaseProject.Client.Models\BandDatabaseProject.Client.Models.csproj", "{C574BEFF-BF83-4DFD-8617-CD5408323800}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +23,17 @@ Global
 		{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C574BEFF-BF83-4DFD-8617-CD5408323800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C574BEFF-BF83-4DFD-8617-CD5408323800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C574BEFF-BF83-4DFD-8617-CD5408323800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C574BEFF-BF83-4DFD-8617-CD5408323800}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52AA9311-4F89-4C6A-ABE8-E6C6DCDB0074} = {26A1EBF8-CA39-47DF-AED6-5D56A9A69040}
+		{C574BEFF-BF83-4DFD-8617-CD5408323800} = {9C8D6248-5F9D-4E49-9E37-CB51F6D9A61D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E9DF155-2491-4180-B7BE-28BE328DBEAA}
