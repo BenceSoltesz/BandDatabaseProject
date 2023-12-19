@@ -388,7 +388,7 @@ namespace BandDatabaseProject.Client
         public static void Main(string[] args)
         {
 
-            rest = new RestService("http://localhost:44755/", "band");
+            rest = new RestService("http://localhost:5037/", "band");
 
             var concertSubMenu = new ConsoleMenu(args, level: 1)
                 .Add("List", () => List("Concert"))
